@@ -29,3 +29,19 @@ button:disabled{opacity:.3;cursor:default}
 .c-etude{--c:var(--etude)}.c-priere{--c:var(--priere)}.c-resto{--c:var(--resto)}.c-sport{--c:var(--sport)}.c-autre{--c:var(--autre)}
 .now{position:absolute;top:0;bottom:0;width:2px;background:#e03b3b;z-index:4;pointer-events:none}
 #info{font-size:14px;min-height:20px}
+.tt{max-height:calc(100vh - 250px)}
+.bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px;font-size:15px}
+.bar button,dialog button,.del{font:inherit;border:1px solid #000;background:#fff;color:#000;padding:3px 10px;cursor:pointer}
+.bar button.primary,dialog button.primary{background:var(--blue);color:#fff;font-weight:bold}
+#wl{font-weight:bold;min-width:96px;text-align:center}
+.bar #add{margin-left:auto}
+.del{margin-left:8px;padding:1px 8px;font-size:13px}
+.ev.extra{border-style:dashed;border-width:2px}
+dialog{border:2px solid #000;padding:16px;font-family:inherit;width:min(92vw,380px);color:#000;background:#fff}
+dialog::backdrop{background:rgba(0,0,0,.4)}
+dialog h2{margin:0 0 10px;font-size:19px}
+dialog label{display:block;margin-bottom:10px;font-weight:bold;font-size:15px}
+dialog input,dialog select{display:block;width:100%;margin-top:3px;padding:6px;font:inherit;font-weight:normal;border:1px solid #000;background:#fff;color:#000}
+.note{font-size:13px;margin:0 0 6px}
+#err{color:#d00000;min-height:18px;margin:0 0 6px;font-size:14px}
+.acts{display:flex;justify-content:flex-end;gap:8px}

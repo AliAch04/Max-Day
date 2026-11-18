@@ -19,8 +19,29 @@
   </div>
   <div><b>Afficher</b><div class="prio" id="leg"></div></div>
 </div>
+<div class="bar">
+  <button id="prev" aria-label="Semaine précédente">◀</button>
+  <span id="wl"></span>
+  <button id="next" aria-label="Semaine suivante">▶</button>
+  <button id="now">Aujourd’hui</button>
+  <button id="add" class="primary">+ Ajouter une séance</button>
+</div>
 <div class="tt" id="tt">Chargement…</div>
 <p id="info">Touche une activité pour voir ses détails. Les chevauchements s’affichent sur une 2<sup>e</sup> ligne.</p>
+
+<dialog id="dlg">
+  <form id="f" method="dialog">
+    <h2>Nouvelle séance</h2>
+    <label>Nom<input id="fn" type="text" maxlength="60" placeholder="Rattrapage, conférence…" required></label>
+    <label>Début<input id="fs" type="datetime-local" required></label>
+    <label>Fin<input id="fe" type="datetime-local" required></label>
+    <label>Catégorie (définit la priorité)<select id="fc"></select></label>
+    <p class="note">Affichée entre 05h00 et 23h00, sur la semaine correspondante.</p>
+    <p id="err" role="alert"></p>
+    <div class="acts"><button type="button" id="cancel">Annuler</button><button type="submit" class="primary">Ajouter</button></div>
+  </form>
+</dialog>
+
 <script src="app.js"></script>
 <script>if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})</script>
 </body>

@@ -50,10 +50,12 @@
   {"d":[1,2,3],"a":"13:30","b":"14:00","c":"autre","l":"Repos"},
   {"d":[0],"a":"15:15","b":"17:15","c":"etude","l":"Étude, projets"},
   {"d":[1,2,3],"a":"17:40","b":"18:50","c":"etude","l":"Révision du jour"},
-  {"d":[0],"a":"20:15","b":"21:30","c":"etude","l":"Révision"},
-  {"d":[1,2,3],"a":"20:15","b":"21:30","c":"etude","l":"Étude, exercices"},
-  {"d":[0,1,2,3,5,6],"a":"21:30","b":"22:00","c":"autre","l":"Détente"},
-  {"d":[4],"a":"20:15","b":"22:00","c":"autre","l":"Détente"},
+  {"d":[0],"a":"20:15","b":"22:15","c":"etude","l":"Révision"},
+  {"d":[1,2,3],"a":"20:15","b":"22:15","c":"etude","l":"Étude, exercices"},
+  {"d":[0,1,2,3],"a":"22:15","b":"23:00","c":"autre","l":"Détente"},
+  {"d":[4],"a":"20:15","b":"21:30","c":"etude","l":"Révision"},
+  {"d":[4,5,6],"a":"22:00","b":"23:00","c":"autre","l":"Détente"},
+  {"d":[4],"a":"21:30","b":"22:00","c":"etude","l":"Préparation du week-end"},
   {"d":[0,2,4],"a":"17:40","b":"18:45","c":"sport","l":"Salle de sport"},
 
   {"d":[5],"a":"06:00","b":"06:45","c":"priere","l":"Coran, adhkar"},
@@ -64,7 +66,7 @@
   {"d":[5],"a":"13:30","b":"15:00","c":"autre","l":"Repos, sieste"},
   {"d":[5],"a":"15:20","b":"17:15","c":"etude","l":"Projet perso"},
   {"d":[5],"a":"17:40","b":"18:45","c":"autre","l":"Loisirs"},
-  {"d":[5],"a":"20:00","b":"21:30","c":"autre","l":"Loisirs, famille"},
+  {"d":[5],"a":"20:00","b":"22:00","c":"autre","l":"Loisirs, famille"},
 
   {"d":[6],"a":"06:00","b":"08:15","c":"autre","l":"Repos"},
   {"d":[6],"a":"08:30","b":"09:30","c":"resto","l":"Petit-déjeuner"},
@@ -73,8 +75,6 @@
   {"d":[6],"a":"14:00","b":"15:00","c":"autre","l":"Repos, appels"},
   {"d":[6],"a":"15:20","b":"17:15","c":"autre","l":"Tâches perso"},
   {"d":[6],"a":"17:40","b":"18:45","c":"sport","l":"Sport léger"},
-  {"d":[6],"a":"20:00","b":"21:30","c":"etude","l":"Planning de la semaine"},
-
-  {"d":[0,1,2,3,4,5,6],"a":"22:00","b":"23:00","c":"autre","l":"Sommeil"}
+  {"d":[6],"a":"20:00","b":"22:00","c":"etude","l":"Planning et révision de la semaine"}
  ]
 }
