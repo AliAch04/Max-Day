@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4f81bd">
+<title>All-Day · Emploi du temps</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>All-Day · Emploi du temps 05h00 – 23h00</h1>
+<div class="panel">
+  <div>
+    <b>Priorité</b> (1 = passe en premier en cas de chevauchement)
+    <ol class="prio" id="prio"></ol>
+    <button id="reset">Ordre initial</button>
+  </div>
+  <div><b>Afficher</b><div class="prio" id="leg"></div></div>
+</div>
+<div class="tt" id="tt">Chargement…</div>
+<p id="info">Touche une activité pour voir ses détails. Les chevauchements s’affichent sur une 2<sup>e</sup> ligne.</p>
+<script src="app.js"></script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{})</script>
+</body>
+</html>

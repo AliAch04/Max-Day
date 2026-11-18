@@ -1,0 +1,31 @@
+:root{--blue:#4f81bd;--etude:#d1d9e8;--priere:#cde8d4;--resto:#f6e2b3;--sport:#f4c6cc;--autre:#ececec}
+*{box-sizing:border-box}
+body{margin:0;padding:12px;padding-top:max(12px,env(safe-area-inset-top));padding-bottom:max(12px,env(safe-area-inset-bottom));background:#fff;color:#000;font-family:"Times New Roman",Times,serif}
+h1{font-size:20px;margin:0 0 10px}
+.panel{display:flex;flex-wrap:wrap;gap:10px 28px;margin-bottom:10px;font-size:15px}
+.prio{list-style:none;margin:4px 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.prio li,.prio button.tg{display:flex;align-items:center;gap:6px;border:1px solid #000;padding:3px 6px;font:inherit;font-weight:bold;color:#000;background:var(--c)}
+.prio button.tg[aria-pressed="false"]{opacity:.4;text-decoration:line-through}
+.prio li button,#reset{font:inherit;border:1px solid #000;background:#fff;cursor:pointer;padding:0 6px}
+#reset{padding:2px 8px;font-size:14px}
+button:disabled{opacity:.3;cursor:default}
+.tt{overflow:auto;border:1px solid #000;max-height:calc(100vh - 190px)}
+.row{display:flex;width:max-content;border-bottom:1px solid #000}
+.row:last-child{border-bottom:0}
+.day{position:sticky;left:0;z-index:5;flex:0 0 62px;background:var(--blue);font-weight:bold;font-size:17px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:1px solid #000}
+.day small{font-weight:normal;font-size:12px}
+.hd{position:sticky;top:0;z-index:8;background:var(--blue);font-weight:bold;font-size:14px}
+.hd .day{height:30px}
+.hr{display:flex;align-items:center}
+.hr span{flex:none;padding-left:4px;border-left:1px solid #000;line-height:30px}
+.today .day{background:#2f5f99;color:#fff}
+.track{position:relative;flex:none;background:#fff repeating-linear-gradient(90deg,#999 0 1px,transparent 1px var(--hour))}
+.today .track{background-color:#f3f7fd}
+.ev{position:absolute;overflow:hidden;padding:2px 4px;border:1px solid #000;background:var(--c);font-size:13px;font-weight:bold;line-height:1.2;text-align:center;display:flex;flex-direction:column;justify-content:center;cursor:pointer}
+.ev i{font-weight:normal;text-decoration:underline;font-size:12px}
+.ev small{font-weight:normal;font-size:11px}
+.ev.v{writing-mode:vertical-rl;transform:rotate(180deg);padding:0;font-size:11px;align-items:center}
+.ev.red{color:#d00000}
+.c-etude{--c:var(--etude)}.c-priere{--c:var(--priere)}.c-resto{--c:var(--resto)}.c-sport{--c:var(--sport)}.c-autre{--c:var(--autre)}
+.now{position:absolute;top:0;bottom:0;width:2px;background:#e03b3b;z-index:4;pointer-events:none}
+#info{font-size:14px;min-height:20px}
